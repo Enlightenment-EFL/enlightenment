@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enlightenment\n"
 "Report-Msgid-Bugs-To: enlightenment-devel@lists.sourceforge.net\n"
 "POT-Creation-Date: 2022-06-15 19:38+0200\n"
-"PO-Revision-Date: 2022-09-19 22:07+0100\n"
+"PO-Revision-Date: 2022-09-27 17:36+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese\n"
 "Language: pt\n"
@@ -10656,7 +10656,7 @@ msgstr "Pacotes a atualizar"
 
 #: src/modules/wizard/page_170.c:27
 msgid "Check for available updates"
-msgstr "Procurar atualizações"
+msgstr "Verificar as atualizações disponíveis"
 
 #: src/modules/wizard/page_170.c:38
 msgid ""
@@ -10672,31 +10672,31 @@ msgid ""
 msgstr ""
 "O Enlightenment pode procurar novas<ps/>versões e atualizações para<ps/>o "
 "ambiente de trabalho e para os extras.<ps/><ps/>Esta funcionalidade pode ser "
-"útil<ps/>pois permite-lhe descobrir as<ps/>diversas correções à medida que "
-"são disponibilizadas<ps/>. Para o efeito, o Enlightenment<ps/>irá efetuar "
-"uma ligação ao enlightenment.org e<ps/>enviar algumas informações<ps/>tal "
-"como um navegador web faz.<ps/>Nenhuma informação pessoal (nome de "
-"utilizador,<ps/>senhas ou ficheiros) será enviada. Se não quiser<ps/>ativar "
-"a funcionalidade, desative-a agora.<ps/>No entanto, recomendamos que<ps/"
-">mantenha esta opção ativa, pois se não o fizer<ps/>poderá ficar vulnerável "
-"aos erros que possam existir no código."
+"útil<ps/>pois permite-lhe descobrir as diversas<ps/>correções à medida que "
+"são disponibilizadas.<ps/>Para o efeito, o Enlightenment irá efetuar<ps/>uma "
+"ligação ao enlightenment.org e<ps/>enviar algumas informações<ps/>tal como "
+"um navegador web faz.<ps/>Nenhuma informação pessoal (nome de utilizador,<ps/"
+">palavras-passe ou ficheiros) será enviada. Se não quiser<ps/>ativar a "
+"funcionalidade, desative-a agora.<ps/>No entanto, recomendamos que mantenha "
+"esta<ps/>opção ativa, pois se não o fizer poderá ficar<ps/>vulnerável aos "
+"erros que possam existir no código."
 
 #: src/modules/wizard/page_170.c:60
 msgid "Enable update checking"
-msgstr "Ativar procura de atualizações"
+msgstr "Ativar a procura por atualizações"
 
 #: src/modules/wizard/page_180.c:27
 msgid "Information"
-msgstr "Informações"
+msgstr "Informação"
 
 #: src/modules/wizard/page_180.c:38
 msgid ""
 "A taskbar can be added to<ps/>show open windows and applications.<ps/>The "
 "IBar launcher already can do this,<ps/>so this is in addition to that."
 msgstr ""
-"Uma barra de tarefas pode ser adicionada para<ps/>mostrar janelas e "
-"aplicações abertas. <ps/>O lançador IBar já pode fazer isto,<ps/>por isso, "
-"isto é em adição a isso."
+"Uma barra de tarefas pode ser adicionada<ps/>para mostrar janelas e "
+"aplicações abertas.<ps/>O lançador IBar já é capaz de fazer isto,<ps/>por "
+"isso, isto é apena um complemento."
 
 #: src/modules/wizard/page_180.c:49
 msgid "Enable Taskbar"
@@ -10710,7 +10710,7 @@ msgstr "Definições do teclado"
 #: src/modules/xkbswitch/e_mod_config.c:1505
 #: src/modules/xkbswitch/e_mod_config.c:1631
 msgid "No Name"
-msgstr "Sem Nome"
+msgstr "Sem nome"
 
 #: src/modules/xkbswitch/e_mod_config.c:630
 msgid "Do not apply any keyboard settings ever"
