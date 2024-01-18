@@ -6,20 +6,24 @@
 # poczciwy <Unknown>, 2010.
 # Mariusz 'mariom' Kozakowski <11mariom@gmail.com>, 2010.
 # Enlik <poczta-sn@gazeta.pl>, 2010.
+# Eryk Michalak <gnu.ewm@protonmail.com>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-29 19:35+0100\n"
-"PO-Revision-Date: 2010-11-28 18:55+0100\n"
-"Last-Translator: Mariusz Kozakowski <11mariom@gmail.com>\n"
-"Language-Team: General\n"
+"PO-Revision-Date: 2024-01-19 00:41+0100\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
+"Language-Team: Polish <>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Launguage: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2)\n"
+"X-Generator: Gtranslator 45.3\n"
 
 #: src/bin/e_about.c:17
 msgid "About Enlightenment"
@@ -181,7 +185,7 @@ msgstr "Informacja o błędzie"
 #: src/bin/e_actions.c:3270
 #, c-format
 msgid "Invalid parameter: %s"
-msgstr ""
+msgstr "Nieprawidłowy parametr: %s"
 
 #: src/bin/e_actions.c:3408
 #, fuzzy
@@ -341,7 +345,7 @@ msgstr "Zwinięcie (Użytkownik)"
 
 #: src/bin/e_actions.c:3608
 msgid "syntax: \"(0|1) (up|down|left|right)\""
-msgstr ""
+msgstr "składnia: \"(0|1) (up|down|left|right)\""
 
 #: src/bin/e_actions.c:3612
 msgid "Toggle Borderless State"
@@ -585,7 +589,7 @@ msgstr "Skocz do biurka"
 
 #: src/bin/e_actions.c:3776
 msgid "Jump to window... or start..."
-msgstr ""
+msgstr "Przejdź do okna... lub uruchom..."
 
 #: src/bin/e_actions.c:3781 src/bin/e_actions.c:3783 src/bin/e_actions.c:3785
 #: src/bin/e_actions.c:3791 src/bin/e_actions.c:3793 src/bin/e_actions.c:3795
@@ -1919,9 +1923,8 @@ msgid "Set background..."
 msgstr "Zmień tło..."
 
 #: src/bin/e_fm.c:10097
-#, fuzzy
 msgid "Clear background"
-msgstr "Zmień tło..."
+msgstr "Wyczyść tło"
 
 #: src/bin/e_fm.c:10104 src/bin/e_fm.c:10338
 msgid "Set overlay..."
@@ -1944,7 +1947,7 @@ msgstr "Zmień nazwę pliku"
 #: src/bin/e_fm.c:10546 src/bin/e_fm.c:10582
 #, c-format
 msgid "%s already exists!"
-msgstr ""
+msgstr "%s już istnieje!"
 
 #: src/bin/e_fm.c:10550 src/bin/e_fm.c:10587
 #, c-format
@@ -2035,17 +2038,17 @@ msgstr[1] ""
 #: src/bin/e_fm_device.c:59
 #, c-format
 msgid "%s %s—%s"
-msgstr ""
+msgstr "%s %s—%s"
 
 #: src/bin/e_fm_device.c:66 src/bin/e_fm_device.c:73
 #, c-format
 msgid "%s—%s"
-msgstr ""
+msgstr "%s—%s"
 
 #: src/bin/e_fm_device.c:78
 #, c-format
 msgid "Flash Card—%s"
-msgstr ""
+msgstr "Karta pamięci—%s"
 
 #: src/bin/e_fm_device.c:80
 #, c-format
@@ -2059,7 +2062,7 @@ msgstr "Urządzenie usuwalne"
 #: src/bin/e_fm_prop.c:364
 #, c-format
 msgid "Cannot change permissions: %s"
-msgstr ""
+msgstr "Nie można zmienić uprawnień: %s"
 
 #: src/bin/e_fm_prop.c:503 src/bin/e_int_config_comp_match.c:134
 #: src/bin/e_shelf.c:1135 src/bin/e_shelf.c:2289
@@ -2116,11 +2119,11 @@ msgstr "gotowy"
 
 #: src/bin/e_fm_prop.c:598 src/bin/e_fm_prop.c:607 src/bin/e_fm_prop.c:616
 msgid "write"
-msgstr ""
+msgstr "zapis"
 
 #: src/bin/e_fm_prop.c:600 src/bin/e_fm_prop.c:609 src/bin/e_fm_prop.c:618
 msgid "execute"
-msgstr ""
+msgstr "wykonywanie"
 
 #: src/bin/e_fm_prop.c:603
 #, fuzzy
@@ -2162,7 +2165,7 @@ msgstr "Informacje odnośnika"
 
 #: src/bin/e_fm_prop.c:703
 msgid "This link is broken."
-msgstr ""
+msgstr "Ten link nie działa."
 
 #: src/bin/e_fm_prop.c:758
 msgid "Select an Image"
@@ -2480,7 +2483,6 @@ msgid "Align"
 msgstr "Enlightenment"
 
 #: src/bin/e_int_client_menu.c:163 src/bin/e_int_client_menu.c:1370
-#, fuzzy
 msgid "Always on Top"
 msgstr "Zawsze na wierzchu"
 
@@ -2489,7 +2491,6 @@ msgid "Sticky"
 msgstr "Przyklej"
 
 #: src/bin/e_int_client_menu.c:194
-#, fuzzy
 msgid "Shade"
 msgstr "Zwiń"
 
@@ -2540,7 +2541,7 @@ msgstr "Utwórz skrót klawiaturowy"
 
 #: src/bin/e_int_client_menu.c:715
 msgid "Edit Color Scheme"
-msgstr ""
+msgstr "Edytuj schemat kolorów"
 
 #: src/bin/e_int_client_menu.c:761
 #: src/modules/everything/evry_plug_windows.c:356
@@ -2689,22 +2690,22 @@ msgstr "Pasek zadań"
 #: src/bin/e_moveresize.c:152 src/bin/e_widget_filepreview.c:94
 #, c-format
 msgid "%i×%i"
-msgstr ""
+msgstr "%i×%i"
 
 #: src/bin/e_int_client_prop.c:133
 #, c-format
 msgid "%i,%i"
-msgstr ""
+msgstr "%i,%i"
 
 #: src/bin/e_int_client_prop.c:142
 #, c-format
 msgid "%1.3f"
-msgstr ""
+msgstr "%1.3f"
 
 #: src/bin/e_int_client_prop.c:145
 #, c-format
 msgid "%1.3f–%1.3f"
-msgstr ""
+msgstr "%1.3f–%1.3f"
 
 #: src/bin/e_int_client_prop.c:156 src/bin/e_int_client_prop.c:178
 #, fuzzy, c-format
@@ -2729,7 +2730,7 @@ msgstr ""
 #: src/bin/e_int_client_prop.c:229
 #, c-format
 msgid "North"
-msgstr ""
+msgstr "Północ"
 
 #: src/bin/e_int_client_prop.c:233
 #, c-format
@@ -2739,12 +2740,12 @@ msgstr ""
 #: src/bin/e_int_client_prop.c:237
 #, c-format
 msgid "West"
-msgstr ""
+msgstr "Zachód"
 
 #: src/bin/e_int_client_prop.c:245
 #, c-format
 msgid "East"
-msgstr ""
+msgstr "Wschód"
 
 #: src/bin/e_int_client_prop.c:249
 #, c-format
@@ -2754,7 +2755,7 @@ msgstr ""
 #: src/bin/e_int_client_prop.c:253
 #, c-format
 msgid "South"
-msgstr ""
+msgstr "Południe"
 
 #: src/bin/e_int_client_prop.c:257
 #, c-format
@@ -2788,14 +2789,14 @@ msgstr "Brak"
 #: src/modules/conf_randr/e_int_config_randr2.c:732
 #: src/modules/conf_randr/e_int_config_randr2.c:1071
 msgid "Above"
-msgstr ""
+msgstr "Powyżej"
 
 #: src/bin/e_int_client_prop.c:312
 #: src/modules/conf_randr/e_int_config_randr2.c:479
 #: src/modules/conf_randr/e_int_config_randr2.c:743
 #: src/modules/conf_randr/e_int_config_randr2.c:1072
 msgid "Below"
-msgstr ""
+msgstr "Poniżej"
 
 #: src/bin/e_int_client_prop.c:391
 msgid "ICCCM Properties"
@@ -3106,7 +3107,7 @@ msgstr "Pozycja"
 
 #: src/bin/e_int_config_comp.c:170
 msgid "WARNING"
-msgstr ""
+msgstr "OSTRZEŻENIE"
 
 #: src/bin/e_int_config_comp.c:171
 msgid ""
@@ -3157,7 +3158,7 @@ msgstr "Silnik"
 
 #: src/bin/e_int_config_comp.c:234 src/bin/e_int_config_comp.c:535
 msgid "Software"
-msgstr ""
+msgstr "Oprogramowanie"
 
 #: src/bin/e_int_config_comp.c:237 src/bin/e_int_config_comp.c:538
 #, fuzzy
@@ -3208,9 +3209,8 @@ msgid "Dithering"
 msgstr "Inne ustawienia"
 
 #: src/bin/e_int_config_comp.c:298 src/bin/e_int_config_comp.c:544
-#, fuzzy
 msgid "Rendering"
-msgstr "Zapamiętaj porządek"
+msgstr "Renderowanie"
 
 #: src/bin/e_int_config_comp.c:304
 #, fuzzy
@@ -3228,7 +3228,7 @@ msgstr "Wyślij na"
 
 #: src/bin/e_int_config_comp.c:311
 msgid "Sync"
-msgstr ""
+msgstr "Synchronizacja"
 
 #: src/bin/e_int_config_comp.c:312
 msgid "Grab Server during draw"
@@ -3245,7 +3245,7 @@ msgstr "%1.0f sekund"
 
 #: src/bin/e_int_config_comp.c:320
 msgid "DANGEROUS"
-msgstr ""
+msgstr "NIEBEZPIECZNE"
 
 #: src/bin/e_int_config_comp.c:321
 #, fuzzy
@@ -3302,7 +3302,7 @@ msgstr "(Nieużywane)"
 
 #: src/bin/e_int_config_comp_match.c:81 src/bin/e_int_config_comp_match.c:416
 msgid "Combo"
-msgstr ""
+msgstr "Kombo"
 
 #: src/bin/e_int_config_comp_match.c:85 src/bin/e_int_config_comp_match.c:420
 #: src/bin/e_int_config_comp_match.c:487
@@ -3312,7 +3312,7 @@ msgstr "dialogi"
 
 #: src/bin/e_int_config_comp_match.c:87 src/bin/e_int_config_comp_match.c:422
 msgid "Dock"
-msgstr ""
+msgstr "Dok"
 
 #: src/bin/e_int_config_comp_match.c:89 src/bin/e_int_config_comp_match.c:424
 #, fuzzy
@@ -3380,7 +3380,7 @@ msgstr "Tytuł:"
 #: src/bin/e_int_config_comp_match.c:136 src/bin/e_int_config_comp_match.c:142
 #: src/bin/e_int_config_comp_match.c:148 src/bin/e_int_config_comp_match.c:157
 msgid " / "
-msgstr ""
+msgstr " / "
 
 #: src/bin/e_int_config_comp_match.c:128 src/bin/e_widget_filepreview.c:483
 #, fuzzy
@@ -3437,11 +3437,11 @@ msgstr "Wyłącz"
 
 #: src/bin/e_int_config_comp_match.c:511
 msgid "ARGB"
-msgstr ""
+msgstr "ARGB"
 
 #: src/bin/e_int_config_comp_match.c:547
 msgid "Flags"
-msgstr ""
+msgstr "Flagi"
 
 #: src/bin/e_int_config_comp_match.c:551 src/bin/e_int_shelf_config.c:226
 #: src/modules/conf_theme/e_int_config_fonts.c:704
@@ -3660,7 +3660,7 @@ msgstr "O wystroju"
 
 #: src/bin/e_int_menus.c:261
 msgid "Report Bug"
-msgstr ""
+msgstr "Zgłoś błąd"
 
 #: src/bin/e_int_menus.c:352
 msgid "Virtual"
@@ -3691,9 +3691,8 @@ msgid "Set Virtual Desktops"
 msgstr "Ustaw wirtualne pulpity"
 
 #: src/bin/e_int_menus.c:1602 src/bin/e_int_menus.c:1792
-#, fuzzy
 msgid "No windows"
-msgstr "(Żadnemu)"
+msgstr "Brak okien"
 
 #: src/bin/e_int_menus.c:1711 src/bin/e_int_menus.c:1805
 #, fuzzy
@@ -3777,7 +3776,7 @@ msgstr "Okres chowania"
 #: src/modules/conf_bindings/e_int_config_edgebindings.c:833
 #, c-format
 msgid "%.2f seconds"
-msgstr ""
+msgstr "%.2f sekund"
 
 #: src/bin/e_int_shelf_config.c:265
 #, fuzzy
@@ -4307,7 +4306,7 @@ msgstr "Czy chciałbyś wyładować ten moduł?<br>"
 #: src/modules/conf_shelves/e_int_config_shelf.c:397
 #: src/modules/ibar/e_mod_config.c:209
 msgid "Keep"
-msgstr ""
+msgstr "Zachowaj"
 
 #: src/bin/e_module.c:692
 msgid ""
@@ -4383,11 +4382,11 @@ msgstr "Popup"
 
 #: src/bin/e_shelf.c:78
 msgid "Left-bottom Corner"
-msgstr ""
+msgstr "Lewy dolny narożnik"
 
 #: src/bin/e_shelf.c:79
 msgid "Right-bottom Corner"
-msgstr ""
+msgstr "Prawy dolny narożnik"
 
 #: src/bin/e_shelf.c:352 src/bin/e_shelf.c:1131
 #, fuzzy, c-format
@@ -4396,7 +4395,7 @@ msgstr "Pólka #"
 
 #: src/bin/e_shelf.c:945
 msgid "Shelf Autohide Error"
-msgstr ""
+msgstr "Błąd automatycznego chowania doku"
 
 #: src/bin/e_shelf.c:945
 msgid ""
@@ -4444,9 +4443,8 @@ msgid "A shelf with that name and id already exists!"
 msgstr ""
 
 #: src/bin/e_shelf.c:2288
-#, fuzzy
 msgid "Rename Shelf"
-msgstr "Zmień nazwę pliku"
+msgstr "Zmień nazwę półki"
 
 #: src/bin/e_shelf.c:2362 src/modules/conf_shelves/e_int_config_shelf.c:145
 #: src/modules/ibar/e_mod_config.c:118 src/modules/ibar/e_mod_main.c:491
@@ -4859,7 +4857,7 @@ msgstr ""
 #: src/modules/packagekit/e_mod_config.c:86
 #, c-format
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: src/bin/e_utils.c:1022
 #, fuzzy, c-format
@@ -4924,20 +4922,20 @@ msgstr "Typy MIME"
 #: src/bin/e_widget_filepreview.c:407
 #, c-format
 msgid "%3.1f%%"
-msgstr ""
+msgstr "%3.1f%%"
 
 #: src/bin/e_widget_filepreview.c:413
 #: src/modules/conf_bindings/e_int_config_swipebindings.c:706
 msgid "Length:"
-msgstr ""
+msgstr "Długość:"
 
 #: src/bin/e_widget_filepreview.c:478
 msgid "Used:"
-msgstr ""
+msgstr "Użyte:"
 
 #: src/bin/e_widget_filepreview.c:480
 msgid "Reserved:"
-msgstr ""
+msgstr "Zarezerwowane:"
 
 #: src/bin/e_widget_filepreview.c:481
 msgid "Mount status:"
@@ -5078,7 +5076,7 @@ msgstr "Alarm gdy na:"
 #: src/modules/battery/e_mod_config.c:254
 #, c-format
 msgid "%1.0f min"
-msgstr ""
+msgstr "%1.0f min"
 
 #: src/modules/battery/e_mod_config.c:262
 #, fuzzy
@@ -5149,7 +5147,6 @@ msgid "Battery: %s"
 msgstr "Bateria"
 
 #: src/modules/battery/e_mod_main.c:481
-#, fuzzy
 msgid "Power Management Timing"
 msgstr "Zarządzanie energią"
 
@@ -5177,7 +5174,7 @@ msgstr "Miernik baterii"
 #: src/modules/bluez5/bz_agent.c:115 src/modules/bluez5/bz_agent.c:131
 #: src/modules/bluez5/bz_agent.c:285
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/modules/bluez5/bz_agent.c:116
 #, fuzzy, c-format
@@ -5219,7 +5216,7 @@ msgstr "Chroniony"
 
 #: src/modules/bluez5/e_mod_main.c:128
 msgid "Bluez5"
-msgstr ""
+msgstr "Bluez5"
 
 #: src/modules/bluez5/e_mod_main.c:207
 msgid "Bluetooth rfkill run Error"
@@ -5263,7 +5260,7 @@ msgstr ""
 
 #: src/modules/bluez5/e_mod_popup.c:465
 msgid "Scan"
-msgstr ""
+msgstr "Skanuj"
 
 #: src/modules/bluez5/e_mod_popup.c:465
 #, fuzzy
@@ -5296,27 +5293,24 @@ msgid "Positioning "
 msgstr "Pozycja"
 
 #: src/modules/bluez5/e_mod_popup.c:514
-#, fuzzy
 msgid "Networking "
-msgstr "Zarządzanie energią"
+msgstr "Sieci"
 
 #: src/modules/bluez5/e_mod_popup.c:515
-#, fuzzy
 msgid "Rendering "
-msgstr "Zapamiętaj porządek"
+msgstr "Renderowanie"
 
 #: src/modules/bluez5/e_mod_popup.c:516
-#, fuzzy
 msgid "Capture "
-msgstr "zdobyć"
+msgstr "Przechwyć"
 
 #: src/modules/bluez5/e_mod_popup.c:517
 msgid "OBEX "
-msgstr ""
+msgstr "OBEX "
 
 #: src/modules/bluez5/e_mod_popup.c:518
 msgid "Audio "
-msgstr ""
+msgstr "Dźwięk"
 
 #: src/modules/bluez5/e_mod_popup.c:519
 msgid "Telephony "
@@ -5387,9 +5381,8 @@ msgid "Analog"
 msgstr "dialogi"
 
 #: src/modules/clock/e_mod_config.c:88
-#, fuzzy
 msgid "Digital"
-msgstr "Zegar cyfrowy"
+msgstr "Cyfrowy"
 
 #: src/modules/clock/e_mod_config.c:90
 #, fuzzy
@@ -5398,15 +5391,15 @@ msgstr "%.1f sekund"
 
 #: src/modules/clock/e_mod_config.c:93
 msgid "12 h"
-msgstr ""
+msgstr "12 godz"
 
 #: src/modules/clock/e_mod_config.c:95
 msgid "24 h"
-msgstr ""
+msgstr "24 godz"
 
 #: src/modules/clock/e_mod_config.c:100
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: src/modules/clock/e_mod_config.c:105
 msgid "Full"
@@ -5424,11 +5417,11 @@ msgstr "Tylko do odczytu"
 
 #: src/modules/clock/e_mod_config.c:111
 msgid "ISO 8601"
-msgstr ""
+msgstr "ISO 8601"
 
 #: src/modules/clock/e_mod_config.c:116
 msgid "Week"
-msgstr ""
+msgstr "Tydzień"
 
 #: src/modules/clock/e_mod_config.c:118 src/modules/clock/e_mod_config.c:131
 #: src/modules/start/e_mod_main.c:183
@@ -5437,20 +5430,20 @@ msgstr "Start"
 
 #: src/modules/clock/e_mod_config.c:129
 msgid "Weekend"
-msgstr ""
+msgstr "Koniec tygodnia"
 
 #: src/modules/clock/e_mod_config.c:140
 msgid "Days"
-msgstr ""
+msgstr "Dni"
 
 #: src/modules/clock/e_mod_main.c:96
 msgid "%a, %e %b, %Y"
-msgstr ""
+msgstr "%a, %e %b, %Y"
 
 #: src/modules/clock/e_mod_main.c:98
 #, c-format
 msgid "%a, %x"
-msgstr ""
+msgstr "%a, %x"
 
 #: src/modules/clock/e_mod_main.c:921
 #, fuzzy
@@ -5511,15 +5504,15 @@ msgstr "custom Command"
 
 #: src/modules/conf_applications/e_int_config_defapps.c:310
 msgid "Browser"
-msgstr ""
+msgstr "Przeglądarka"
 
 #: src/modules/conf_applications/e_int_config_defapps.c:311
 msgid "E-Mail"
-msgstr ""
+msgstr "Klient e-mail"
 
 #: src/modules/conf_applications/e_int_config_defapps.c:313
 msgid "Trash"
-msgstr ""
+msgstr "Kosz"
 
 #: src/modules/conf_applications/e_int_config_defapps.c:314
 #, fuzzy
@@ -5677,7 +5670,7 @@ msgstr "Opcje myszki"
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:369
 msgid "Processor"
-msgstr ""
+msgstr "Procesor"
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:371
 #, fuzzy
@@ -5695,7 +5688,7 @@ msgstr ""
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:377
 msgid "Wifi"
-msgstr ""
+msgstr "Wifi"
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:381
 #, fuzzy
@@ -5724,11 +5717,11 @@ msgstr "Przypisywanie"
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:391
 msgid "S1"
-msgstr ""
+msgstr "S1"
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:393
 msgid "Vaio"
-msgstr ""
+msgstr "Vaio"
 
 #: src/modules/conf_bindings/e_int_config_acpibindings.c:395
 #: src/modules/mixer/backend.c:1054 src/modules/mixer/backend.c:1287
@@ -6107,7 +6100,7 @@ msgstr "Opcje myszki"
 #: src/modules/conf_bindings/e_int_config_mousebindings.c:1172
 #, c-format
 msgid "Extra button (%d)"
-msgstr ""
+msgstr "Dodatkowy przycisk (%d)"
 
 #: src/modules/conf_bindings/e_int_config_mousebindings.c:1188
 msgid "Mouse Wheel Up"
@@ -6159,7 +6152,7 @@ msgstr "Opis Przesuwania"
 
 #: src/modules/conf_bindings/e_int_config_signalbindings.c:637
 msgid "Signal:"
-msgstr ""
+msgstr "Sygnał:"
 
 #: src/modules/conf_bindings/e_int_config_signalbindings.c:781
 #: src/modules/conf_bindings/e_mod_main.c:45
@@ -6237,7 +6230,7 @@ msgstr ""
 #: src/modules/conf_bindings/e_int_config_swipebindings.c:955
 #: src/modules/tiling/e_mod_config.c:219
 msgid "Help"
-msgstr ""
+msgstr "Pomoc"
 
 #: src/modules/conf_bindings/e_int_config_swipebindings.c:977
 #, fuzzy
@@ -6391,7 +6384,7 @@ msgstr "Osobiste hasło:"
 
 #: src/modules/conf_display/e_int_config_desklock.c:232
 msgid "Use PIN (insecure)"
-msgstr ""
+msgstr "Użyj PINu (niebezpieczne)"
 
 #: src/modules/conf_display/e_int_config_desklock.c:236
 #, fuzzy
@@ -7202,7 +7195,7 @@ msgstr "maksymalny"
 
 #: src/modules/conf_performance/e_int_config_powermanagement.c:161
 msgid "Level"
-msgstr ""
+msgstr "Poziom"
 
 #: src/modules/conf_performance/e_int_config_powermanagement.c:170
 msgid "e.g. Saving to disk"
@@ -7267,7 +7260,7 @@ msgstr "Wygaszacz ekranu"
 #: src/modules/conf_randr/e_int_config_randr2.c:1068
 #: src/modules/conf_randr/e_int_config_randr2.c:1210
 msgid "Clone"
-msgstr ""
+msgstr "Klonuj"
 
 #: src/modules/conf_randr/e_int_config_randr2.c:473
 #: src/modules/conf_randr/e_int_config_randr2.c:710
@@ -7307,7 +7300,7 @@ msgstr ""
 #: src/modules/conf_randr/e_int_config_randr2.c:800
 #: src/modules/conf_randr/e_int_config_randr2.c:1212
 msgid "Ask"
-msgstr ""
+msgstr "Zapytaj"
 
 #: src/modules/conf_randr/e_int_config_randr2.c:803
 #, c-format
@@ -7331,7 +7324,7 @@ msgstr "odłączyć"
 
 #: src/modules/conf_randr/e_int_config_randr2.c:1054
 msgid "Priority"
-msgstr ""
+msgstr "Priorytet"
 
 #: src/modules/conf_randr/e_int_config_randr2.c:1066
 #, fuzzy
@@ -7488,7 +7481,6 @@ msgid "Splash Version"
 msgstr "Wersja ekranu powitalnego"
 
 #: src/modules/conf_theme/e_int_config_fonts.c:79
-#, fuzzy
 msgid "Digital Clock"
 msgstr "Zegar cyfrowy"
 
@@ -7679,7 +7671,7 @@ msgstr ""
 #: src/modules/conf_theme/e_int_config_scale.c:339
 #, c-format
 msgid "%1.0f DPI"
-msgstr ""
+msgstr "%1.0f DPI"
 
 #: src/modules/conf_theme/e_int_config_scale.c:325
 #, fuzzy
@@ -7716,7 +7708,7 @@ msgstr "minimum"
 #: src/modules/conf_theme/e_int_config_scale.c:358
 #, c-format
 msgid "%1.2f times"
-msgstr ""
+msgstr "%1.2f razy"
 
 #: src/modules/conf_theme/e_int_config_scale.c:355
 #, fuzzy
@@ -7905,7 +7897,7 @@ msgstr "Wystrój"
 #: src/modules/conf_theme/e_mod_main.c:103
 #: src/modules/conf_theme/e_mod_main.c:126
 msgid "Palette"
-msgstr ""
+msgstr "Paleta"
 
 #: src/modules/conf_theme/e_mod_main.c:100
 #, fuzzy
@@ -8054,7 +8046,7 @@ msgstr "Przydzielanie fokusu dla nowych okien"
 
 #: src/modules/conf_window_manipulation/e_int_config_focus.c:272
 msgid "No window"
-msgstr "(Żadnemu)"
+msgstr "Brak okien"
 
 #: src/modules/conf_window_manipulation/e_int_config_focus.c:274
 msgid "All windows"
@@ -8495,9 +8487,8 @@ msgstr "Rodzaj okna"
 
 #: src/modules/conf_window_manipulation/e_int_config_window_process.c:39
 #: src/modules/conf_window_manipulation/e_mod_main.c:22
-#, fuzzy
 msgid "Window Process Management"
-msgstr "Zarządzanie procesami okno"
+msgstr ""
 
 #: src/modules/conf_window_manipulation/e_int_config_window_process.c:95
 msgid "Kill process if unclosable"
@@ -8537,7 +8528,6 @@ msgid "Window Remembers"
 msgstr "Zapamiętane ustawienia okien"
 
 #: src/modules/conf_window_remembers/e_int_config_remembers.c:129
-#, fuzzy
 msgid "Remember internal dialogs"
 msgstr "Zapamiętaj wewnętrzne dialogi"
 
@@ -8900,9 +8890,8 @@ msgstr "Wtyczki obiektów"
 #: src/modules/everything/evry_config.c:535
 #: src/modules/everything/evry_config.c:734
 #: src/modules/everything/evry_plug_collection.c:172
-#, fuzzy
 msgid "Plugins"
-msgstr "Zwykły"
+msgstr "Wtyczki"
 
 #: src/modules/everything/evry_config.c:542
 #, fuzzy
@@ -8952,9 +8941,8 @@ msgid "Everything Gadgets"
 msgstr "Wszystko"
 
 #: src/modules/everything/evry_gadget.c:673
-#, fuzzy
 msgid "Plugin"
-msgstr "Zwykły"
+msgstr "Wtyczka"
 
 #: src/modules/everything/evry_plug_actions.c:172
 #, fuzzy
@@ -8984,9 +8972,8 @@ msgid "Open with..."
 msgstr "Otwórz za pomocą…"
 
 #: src/modules/everything/evry_plug_apps.c:1184
-#, fuzzy
 msgid "Open File..."
-msgstr "Zmień Nazwę Pliku"
+msgstr "Otwórz plik..."
 
 #: src/modules/everything/evry_plug_apps.c:1198
 #, fuzzy
@@ -9077,9 +9064,8 @@ msgstr "Sortuj według nazwy"
 
 #: src/modules/everything/evry_plug_files.c:1358
 #: src/modules/everything/evry_plug_files.c:1370
-#, fuzzy
 msgid "Recent Files"
-msgstr "Zmień Nazwę Pliku"
+msgstr "Ostatnie pliki"
 
 #: src/modules/everything/evry_plug_files.c:1442
 #: src/modules/everything/evry_plug_files.c:1585
@@ -9113,9 +9099,9 @@ msgstr "Wyczyść pamięć podręczną"
 
 #: src/modules/everything/evry_plugin.c:177
 #: src/modules/everything/evry_plugin.c:208
-#, fuzzy, c-format
+#, c-format
 msgid "Show %s Plugin"
-msgstr "Zwykły"
+msgstr "Pokaż %s wtyczek"
 
 #: src/modules/everything/evry_plugin.c:187
 #, c-format
@@ -9193,7 +9179,7 @@ msgstr "Ścieżki E"
 
 #: src/modules/fileman/e_fwin.c:2407
 msgid "Run"
-msgstr ""
+msgstr "Uruchom"
 
 #: src/modules/fileman/e_fwin.c:2414 src/modules/fileman/e_fwin.c:2793
 msgid "Open"
@@ -9390,7 +9376,7 @@ msgstr "Brak ikon na pulpicie"
 
 #: src/modules/fileman/e_mod_config.c:359
 msgid "Sidebar"
-msgstr ""
+msgstr "Pasek boczny"
 
 #: src/modules/fileman/e_mod_config.c:362
 msgid "Show Detailed Time and Date"
@@ -9407,7 +9393,7 @@ msgstr "Użyj pojedynczego kliknięcia"
 
 #: src/modules/fileman/e_mod_config.c:409
 msgid "'cp+rm' instead of 'mv'"
-msgstr ""
+msgstr "'cp+rm' zamiast 'mv'"
 
 #: src/modules/fileman/e_mod_config.c:415
 #, fuzzy
@@ -9480,7 +9466,7 @@ msgstr ""
 #: src/modules/fileman/e_mod_config.c:489
 #, c-format
 msgid "%2.0f"
-msgstr ""
+msgstr "%2.0f"
 
 #: src/modules/fileman/e_mod_config.c:493
 msgid "Tooltips"
@@ -9514,9 +9500,8 @@ msgid "GTK Bookmarks"
 msgstr ""
 
 #: src/modules/fileman/e_mod_menu.c:521
-#, fuzzy
 msgid "Recent"
-msgstr "Zmień Nazwę Pliku"
+msgstr "Ostatnie"
 
 #: src/modules/fileman/e_mod_menu.c:600
 #, fuzzy
@@ -9579,7 +9564,7 @@ msgstr "Potwierdź"
 
 #: src/modules/gadman/e_mod_config.c:203
 msgid "Layers"
-msgstr ""
+msgstr "Warstwy"
 
 #: src/modules/gadman/e_mod_config.c:213 src/modules/gadman/e_mod_config.c:245
 #, fuzzy
@@ -9895,9 +9880,8 @@ msgid "Mixer"
 msgstr "mikser"
 
 #: src/modules/mixer/backend.c:136
-#, fuzzy
 msgid "Volume changed"
-msgstr "Zmiana rozdzielczości"
+msgstr "Zmieniono głośność"
 
 #: src/modules/mixer/backend.c:345 src/modules/mixer/backend.c:417
 #, fuzzy
@@ -9970,9 +9954,8 @@ msgid "Cards"
 msgstr "karty"
 
 #: src/modules/mixer/e_mod_config.c:440
-#, fuzzy
 msgid "Notify on volume change"
-msgstr "Zmiana rozdzielczości"
+msgstr "Powiadomienie przy zmianie głośności"
 
 #: src/modules/mixer/e_mod_config.c:443
 #, fuzzy
@@ -10777,9 +10760,8 @@ msgid "Circle outline"
 msgstr ""
 
 #: src/modules/shot/e_mod_edit.c:2000
-#, fuzzy
 msgid "Plain text"
-msgstr "Zwykły"
+msgstr "Zwykły tekst"
 
 #: src/modules/shot/e_mod_edit.c:2001
 #, fuzzy
@@ -11379,9 +11361,8 @@ msgid "Whenever the mouse enters a window"
 msgstr "Zapamiętaj Blokady dla tego okna i użyj ich następnym razem"
 
 #: src/modules/wizard/page_110.c:10
-#, fuzzy
 msgid "Network Management"
-msgstr "Zarządzanie energią"
+msgstr "Zarządzanie siecią"
 
 #: src/modules/wizard/page_110.c:16
 #, fuzzy
@@ -11405,9 +11386,8 @@ msgid "Checking to see if Connman exists"
 msgstr ""
 
 #: src/modules/wizard/page_115.c:10
-#, fuzzy
 msgid "Bluetooth Management"
-msgstr "Zarządzanie energią"
+msgstr "Zarządzanie Bluetooth"
 
 #: src/modules/wizard/page_115.c:16
 #, fuzzy
