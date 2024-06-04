@@ -10,3 +10,6 @@
 Session.vim
 /build
 *~
+
+*.json
+*.patch

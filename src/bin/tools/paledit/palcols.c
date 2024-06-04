@@ -1,5 +1,12 @@
 #include "main.h"
 
+typedef struct _Search_Event_Data Search_Event_Data;
+struct _Search_Event_Data
+{
+   Evas_Object *en_obj;
+   Evas_Object *win_obj;
+};
+
 static void _pal_color_add(Evas_Object *win);
 static void _pal_color_del(Evas_Object *win);
 
@@ -174,7 +181,7 @@ _pal_color_del(Evas_Object *win)
 }
 
 void
-palcols_fill(Evas_Object *win)
+palcols_fill(Evas_Object *win, const char *filter_str)
 {
    Elm_Object_Item *sel_it = NULL;
    Elm_Palette *pal = evas_object_data_get(win, "pal");
@@ -198,17 +205,23 @@ palcols_fill(Evas_Object *win)
 
    EINA_LIST_FOREACH(pal->colors, l, col)
      {
-        it = elm_genlist_item_sorted_insert(list, itc, col,
-                                            NULL, ELM_GENLIST_ITEM_NONE,
-                                            _cb_class_insert_cmp,
-                                            _cb_class_gl_sel, win);
-        if (!sel_it) sel_it = it;
+      if (filter_str && !strcasestr(col->name, filter_str))
+         continue;
+      it = elm_genlist_item_sorted_insert(list, itc, col,
+                                          NULL, ELM_GENLIST_ITEM_NONE,
+                                          _cb_class_insert_cmp,
+                                          _cb_class_gl_sel, win);
+      /* XXX: We found exact item, so focus it. 
+       * But not shure that it's usefull, may be even annoying.
+       * It throught errors when you filter from exact to exact imidiately:
+       * Ex.: enter ':bg-dim', then select '-dim' part and delete it. 
+       * You get exact ':bg' and focus_manager error in stdout ;( */
+      if (!sel_it && filter_str && !strcasecmp(col->name, filter_str)) 
+         sel_it = it;
      }
+   
    if (sel_it)
-     {
-        elm_genlist_item_show(sel_it, ELM_GENLIST_ITEM_SCROLLTO_MIDDLE);
-        elm_genlist_item_selected_set(sel_it, EINA_TRUE);
-     }
+      elm_genlist_item_selected_set(sel_it, EINA_TRUE);
 }
 
 static void
@@ -518,10 +531,29 @@ _cb_modify_click(void *data, Evas_Object *obj EINA_UNUSED, void *event_info EINA
    evas_object_show(o);
 }
 
+static void
+_search_del_cb(void *data, Evas *e EINA_UNUSED, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
+{
+   free(data);
+}
+
+static void 
+_search_changed_cb(void *data, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
+{
+   Search_Event_Data * event_data = (Search_Event_Data *)data;
+
+   const char *str = elm_entry_entry_get(event_data->en_obj);
+   if (!str || !strlen(str)) str = NULL;
+
+   palcols_fill(event_data->win_obj, str);
+}
+
 Evas_Object *
 palcols_add(Evas_Object *win)
 {
-   Evas_Object *o, *bxl, *btn, *bxh;
+   Evas_Object *o, *bxl, *btn, *bxh, *bx_entry;
+   Search_Event_Data* event_data = NULL;
+   Evas_Object *gl, *en;
 
    bxl = o = elm_box_add(win);
    elm_box_padding_set(o, 0, ELM_SCALE_SIZE(10));
@@ -594,7 +626,24 @@ palcols_add(Evas_Object *win)
    elm_object_content_set(btn, o);
    evas_object_show(o);
 
-   o = elm_genlist_add(win);
+   bx_entry = elm_box_add(win);
+   elm_box_horizontal_set(bx_entry, EINA_TRUE);
+   evas_object_size_hint_weight_set(bx_entry, EVAS_HINT_EXPAND, 0.0);
+   evas_object_size_hint_align_set(bx_entry, EVAS_HINT_FILL, 0.0);
+   elm_box_pack_end(bxl, bx_entry);
+   evas_object_show(bx_entry);
+
+   en = o = elm_entry_add(win);
+   elm_entry_single_line_set(o, EINA_TRUE);
+   elm_entry_scrollable_set(o, EINA_TRUE);
+   elm_object_part_text_set(o, "guide", "Type item's name here to search.");
+   evas_object_size_hint_weight_set(o, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+   evas_object_size_hint_align_set(o, EVAS_HINT_FILL, EVAS_HINT_FILL);
+   elm_box_pack_end(bx_entry, o);
+   evas_object_show(o);
+   elm_object_focus_set(o, EINA_TRUE);
+
+   gl = o = elm_genlist_add(win);
    evas_object_size_hint_weight_set(o, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
    evas_object_size_hint_fill_set(o, EVAS_HINT_FILL, EVAS_HINT_FILL);
    elm_box_pack_end(bxl, o);
@@ -617,6 +666,13 @@ palcols_add(Evas_Object *win)
    evas_object_show(o);
 
    _pal_hover_add(win, btn);
+
+   event_data = calloc(1, sizeof(Search_Event_Data));
+   event_data->en_obj = en;
+   event_data->win_obj = win;
+
+   evas_object_smart_callback_add(en, "changed,user", _search_changed_cb, (void*)event_data);  
+   evas_object_event_callback_add(gl, EVAS_CALLBACK_FREE, _search_del_cb, (void*)event_data);
 
    return bxl;
 }

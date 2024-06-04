@@ -111,17 +111,17 @@ _undo_apply(Evas_Object *win, Entry *en)
       case ENTRY_CHANGE:
         elm_config_palette_color_set(pal, en->name,
                                      en->r2, en->g2, en->b2, en->a2);
-        palcols_fill(win);
+        palcols_fill(win, NULL);
         // XXX: update colorsel
         break;
       case ENTRY_ADD:
         elm_config_palette_color_unset(pal, en->name);
-        palcols_fill(win);
+        palcols_fill(win, NULL);
         break;
       case ENTRY_DEL:
         elm_config_palette_color_set(pal, en->name,
                                      en->r, en->g, en->b, en->a);
-        palcols_fill(win);
+        palcols_fill(win, NULL);
         break;
       default:
         break;
@@ -140,17 +140,17 @@ _redo_apply(Evas_Object *win, Entry *en)
       case ENTRY_CHANGE:
         elm_config_palette_color_set(pal, en->name,
                                      en->r2, en->g2, en->b2, en->a2);
-        palcols_fill(win);
+        palcols_fill(win, NULL);
         // XXX: update colorsel
         break;
       case ENTRY_ADD:
         elm_config_palette_color_set(pal, en->name,
                                      en->r, en->g, en->b, en->a);
-        palcols_fill(win);
+        palcols_fill(win, NULL);
         break;
       case ENTRY_DEL:
         elm_config_palette_color_unset(pal, en->name);
-        palcols_fill(win);
+        palcols_fill(win, NULL);
         break;
       default:
         break;

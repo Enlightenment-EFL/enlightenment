@@ -21,7 +21,7 @@ pal_load(Evas_Object *win)
    if (!pal) return;
    undoredo_reset(win);
    evas_object_data_set(win, "pal", pal);
-   palcols_fill(win);
+   palcols_fill(win, NULL);
    palimg_update(evas_object_data_get(win, "pal_image"), pal);
    elm_object_text_set(evas_object_data_get(win, "pal_name"), palname);
    pal_save(win);

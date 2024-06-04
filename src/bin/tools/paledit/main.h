@@ -8,7 +8,7 @@ Evas_Object *palimg_add(Evas_Object *win);
 
 Evas_Object *palsel_add(Evas_Object *win);
 
-void         palcols_fill(Evas_Object *win);
+void         palcols_fill(Evas_Object *win, const char *filter_str);
 Evas_Object *palcols_add(Evas_Object *win);
 
 void         colsel_update(Evas_Object *win);
