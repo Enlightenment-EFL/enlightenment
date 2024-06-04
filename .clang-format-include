@@ -1,0 +1,2 @@
+# The following files are opted into `ninja clang-format`
+src/**/*
