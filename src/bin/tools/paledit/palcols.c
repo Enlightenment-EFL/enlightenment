@@ -545,14 +545,16 @@ _cb_items_sort(void *data)
 
    palcols_fill(event_data->win_obj, str);
 
+   sort_timer = NULL;
+
    return EINA_FALSE;
 }
 
 static void 
 _cb_search_changed(void *data, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
 {
-   if (sort_timer) ecore_timer_del(sort_timer);
-   sort_timer = ecore_timer_add(0.3, _cb_items_sort, data);
+   if (sort_timer) return;
+   sort_timer = ecore_timer_add(0.5, _cb_items_sort, data);
 }
 
 Evas_Object *
