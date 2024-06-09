@@ -1,5 +1,7 @@
 #include "main.h"
 
+static Ecore_Timer *sort_timer = NULL;
+
 typedef struct _Search_Event_Data Search_Event_Data;
 struct _Search_Event_Data
 {
@@ -211,11 +213,7 @@ palcols_fill(Evas_Object *win, const char *filter_str)
                                           NULL, ELM_GENLIST_ITEM_NONE,
                                           _cb_class_insert_cmp,
                                           _cb_class_gl_sel, win);
-      /* XXX: We found exact item, so focus it. 
-       * But not shure that it's usefull, may be even annoying.
-       * It throught errors when you filter from exact to exact imidiately:
-       * Ex.: enter ':bg-dim', then select '-dim' part and delete it. 
-       * You get exact ':bg' and focus_manager error in stdout ;( */
+      /* We found exactly equal genlist item, so focus it. */
       if (!sel_it && filter_str && !strcasecmp(col->name, filter_str)) 
          sel_it = it;
      }
@@ -532,20 +530,29 @@ _cb_modify_click(void *data, Evas_Object *obj EINA_UNUSED, void *event_info EINA
 }
 
 static void
-_search_del_cb(void *data, Evas *e EINA_UNUSED, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
+_cb_search_del(void *data, Evas *e EINA_UNUSED, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
 {
    free(data);
 }
 
-static void 
-_search_changed_cb(void *data, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
+static Eina_Bool
+_cb_items_sort(void *data)
 {
    Search_Event_Data * event_data = (Search_Event_Data *)data;
-
    const char *str = elm_entry_entry_get(event_data->en_obj);
+   
    if (!str || !strlen(str)) str = NULL;
 
    palcols_fill(event_data->win_obj, str);
+
+   return EINA_FALSE;
+}
+
+static void 
+_cb_search_changed(void *data, Evas_Object *obj EINA_UNUSED, void *event_info EINA_UNUSED)
+{
+   if (sort_timer) ecore_timer_del(sort_timer);
+   sort_timer = ecore_timer_add(0.3, _cb_items_sort, data);
 }
 
 Evas_Object *
@@ -671,8 +678,8 @@ palcols_add(Evas_Object *win)
    event_data->en_obj = en;
    event_data->win_obj = win;
 
-   evas_object_smart_callback_add(en, "changed,user", _search_changed_cb, (void*)event_data);  
-   evas_object_event_callback_add(gl, EVAS_CALLBACK_FREE, _search_del_cb, (void*)event_data);
+   evas_object_smart_callback_add(en, "changed,user", _cb_search_changed, (void*)event_data);  
+   evas_object_event_callback_add(gl, EVAS_CALLBACK_FREE, _cb_search_del, (void*)event_data);
 
    return bxl;
 }
